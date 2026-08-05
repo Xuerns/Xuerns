@@ -1,0 +1,87 @@
+{
+    "appearance": {
+        "transparency": {
+            "enabled": true
+        }
+    },
+    "bar": {
+        "activeWindow": {
+            "compact": true,
+            "inverted": true
+        },
+        "clock": {
+            "background": false,
+            "showDate": true
+        },
+        "dragThreshold": 20,
+        "persistent": true,
+        "statusIcons": [
+            {
+                "enabled": true,
+                "id": "lockStatus"
+            },
+            {
+                "enabled": false,
+                "id": "audio"
+            },
+            {
+                "enabled": true,
+                "id": "microphone"
+            },
+            {
+                "enabled": false,
+                "id": "kbLayout"
+            },
+            {
+                "enabled": true,
+                "id": "network"
+            },
+            {
+                "enabled": false,
+                "id": "bluetooth"
+            },
+            {
+                "enabled": true,
+                "id": "battery"
+            }
+        ],
+        "tray": {
+            "compact": false
+        },
+        "workspaces": {
+            "activeTrail": false
+        }
+    },
+    "dashboard": {
+        "enable": true,
+        "showDashboard": true,
+        "showMedia": true,
+        "showOnHover": true,
+        "showPerformance": true,
+        "showWeather": true
+    },
+    "launcher": {
+        "enabled": true,
+        "hiddenApps": [
+            "org.kde.plasma.emojier"
+        ],
+        "maxShown": 7,
+        "maxWallpapers": 10,
+        "showOnHover": true
+    },
+    "notifs": {
+        "fullscreen": "off"
+    },
+    "paths": {
+        "wallpaperDir": "~/Pictures/Wallpapers"
+    },
+    "services": {
+        "useFahrenheit": false,
+        "useTwelveHourClock": false
+    },
+    "taskbar": {
+        "enable": true,
+        "persistent": true,
+        "showOnHover": true
+    }
+}
