@@ -20,13 +20,13 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, ... }:
+  outputs = { self, nixpkgs, home-manager, caelestia-shell, noctalia, ... }:
   let system = "x86_64-linux";
   in {
 	nixosConfigurations.xuerns = nixpkgs.lib.nixosSystem {
 		inherit system;
 		specialArgs = {
-		  inherit inputs;
+		  inherit caelestia-shell noctalia;
 		};
 		modules = [ 
 		   ./configuration.nix 
@@ -37,13 +37,13 @@
 		      home-manager.useUserPackages = true;
 
 		      home-manager.extraSpecialArgs = {
-		         inherit inputs;
+		         inherit caelestia-shell noctalia;
 		      };
 		      
 		      home-manager.users.xuerns = {
 			 imports = [
-			    inputs.caelestia-shell.homeManagerModules.default
-			    inputs.noctalia.homeModules.default
+			    caelestia-shell.homeManagerModules.default
+			    noctalia.homeModules.default
 			    ./home.nix
 			 ];
 		      };
