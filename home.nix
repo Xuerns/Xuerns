@@ -3,7 +3,8 @@
 
 {
    imports = [
-      ./modules/shells/caelestia
+      # ./modules/shells/caelestia
+      ./modules/shells/noctalia
    ];
 
    home.username = "xuerns";

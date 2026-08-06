@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, caelestia-shell, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
@@ -151,7 +151,7 @@
       pkgs.kitty
       papirus-icon-theme
       gnome-keyring
-      caelestia-shell.packages.${pkgs.system}.with-cli
+      inputs.caelestia-shell.packages.${pkgs.system}.with-cli
   ];
 
   # Docker

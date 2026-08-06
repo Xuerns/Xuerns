@@ -13,15 +13,20 @@
 	url = "github:caelestia-dots/shell";
 	inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    noctalia = {
+	url = "github:noctalia-dev/noctalia";
+        inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, caelestia-shell, ...}:
+  outputs = inputs@{ self, nixpkgs, home-manager, ... }:
   let system = "x86_64-linux";
   in {
 	nixosConfigurations.xuerns = nixpkgs.lib.nixosSystem {
 		inherit system;
 		specialArgs = {
-		  inherit caelestia-shell;
+		  inherit inputs;
 		};
 		modules = [ 
 		   ./configuration.nix 
@@ -32,12 +37,13 @@
 		      home-manager.useUserPackages = true;
 
 		      home-manager.extraSpecialArgs = {
-		         inherit caelestia-shell;
+		         inherit inputs;
 		      };
 		      
 		      home-manager.users.xuerns = {
 			 imports = [
-			    caelestia-shell.homeManagerModules.default
+			    inputs.caelestia-shell.homeManagerModules.default
+			    inputs.noctalia.homeModules.default
 			    ./home.nix
 			 ];
 		      };
