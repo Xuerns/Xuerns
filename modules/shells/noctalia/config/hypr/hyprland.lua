@@ -1,6 +1,5 @@
 local home   = os.getenv("HOME")
 local hypr   = home .. "/.config/hypr"
-package.path = package.path .. ";" .. home .. "/.config/noctalia/?.lua"
 
 -- Create a file if it doesn't exist, optionally with initial content
 local function maybe_create(file, content)
@@ -40,16 +39,6 @@ end
 -- Maybe set current colours to defaults
 maybe_copy(hypr .. "/scheme/default.lua", hypr .. "/scheme/current.lua")
 
--- User variables
-maybe_create(home .. "/.config/noctalia/hypr-vars.lua", "return {}\n")
-local overrides = require("hypr-vars")
-if type(overrides) == "table" then
-    local vars = require("variables")
-    for k, v in pairs(overrides) do
-        vars[k] = v
-    end
-end
-
 -- Default monitor conf
 hl.monitor({
     output   = "",
@@ -70,7 +59,3 @@ require("hyprland.execs")
 require("hyprland.rules")
 require("hyprland.gestures")
 require("hyprland.keybinds")
-
--- User configs
-maybe_create(home .. "/.config/noctalia/hypr-user.lua")
-require("hypr-user")

@@ -30,6 +30,7 @@
       air
       delve
       golangci-lint
+      gcc
 
       # Containers
       docker-compose
@@ -40,7 +41,7 @@
 
       # Editor
       vscodium
-      antigravity
+      antigravity-ide
       neovim
 
       # shell
@@ -54,5 +55,9 @@
       fd
       ripgrep
       fast
+      cava     
+ 
+      # Discord
+      discord
    ];
 }
