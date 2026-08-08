@@ -5,6 +5,7 @@
    imports = [
       # ./modules/shells/caelestia
       ./modules/shells/noctalia
+      ./modules/services/ollama
    ];
 
    home.username = "xuerns";
@@ -43,6 +44,9 @@
       vscodium
       antigravity-ide
       neovim
+      
+      # Agents CLI
+      claude-code      
 
       # shell
       fish
