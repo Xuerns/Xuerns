@@ -32,6 +32,9 @@
       delve
       golangci-lint
       gcc
+      
+      # Python
+      python3
 
       # Containers
       docker-compose
