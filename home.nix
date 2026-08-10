@@ -43,11 +43,17 @@
       nodejs
       pnpm
 
+      # Android
+      kotlin
+
       # Editor
       vscodium
       antigravity-ide
       neovim
-      
+      jetbrains.phpstorm
+      android-studio
+      wireshark
+
       # Agents CLI
       claude-code      
 
@@ -66,5 +72,8 @@
  
       # Discord
       discord
+
+      # Note
+      obsidian
    ];
 }

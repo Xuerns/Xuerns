@@ -35,14 +35,14 @@ return {
     shadowColour               = "rgba(" .. scheme.inversePrimary .. "10)",
 
     -- Gaps
-    workspaceGaps              = 20,
+    workspaceGaps              = 10,
     windowGapsIn               = 5,
     windowGapsOut              = 10,
     singleWindowGapsOut        = 20,
 
     -- Window styling
-    windowOpacity              = 0.75,
-    windowRounding             = 10,
+    windowOpacity              = 0.95,
+    windowRounding             = 5,
     windowBorderSize           = 1,
     activeWindowBorderColour   = "rgba(" .. scheme.primary .. "e6)",
     inactiveWindowBorderColour = "rgba(" .. scheme.onSurfaceVariant .. "11)",
