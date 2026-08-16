@@ -55,7 +55,8 @@
       wireshark
 
       # Agents CLI
-      claude-code      
+      claude-code
+      codex
 
       # shell
       fish
@@ -75,5 +76,9 @@
 
       # Note
       obsidian
+
+      # Tools
+      insomnia
+      mpvpaper
    ];
 }
