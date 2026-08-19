@@ -50,6 +50,7 @@
   services.desktopManager.plasma6.enable = true;
 
   # Use KDE SSH Askpass
+
   programs.ssh.askPassword = lib.mkForce "${pkgs.kdePackages.ksshaskpass}/bin/ksshaskpass";
 
   # Enable Hyprland Desktop Environment.

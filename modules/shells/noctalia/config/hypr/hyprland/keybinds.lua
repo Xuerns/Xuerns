@@ -42,10 +42,10 @@ local function create_bind(keybinds, action, flags)
 end
 
 -- Launcher
-local launcher_default = normalise_keybind("SUPER + SUPER_L")
+local launcher_default = normalise_keybind("SUPER + SPACE")
 create_bind(
     vars.kbLauncher,
-    hl.dsp.global("caelestia:launcher"),
+    hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"),
     function(key)
         return normalise_keybind(key) == launcher_default and release or nil
     end

@@ -80,5 +80,6 @@
       # Tools
       insomnia
       mpvpaper
+      feh
    ];
 }
