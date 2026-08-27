@@ -59,7 +59,7 @@ hl.monitor({
 
 require("hyprland.keybinds")
 require("hyprland.execs")
-
+require("hyprland.env")
 
 return {
     colors = {

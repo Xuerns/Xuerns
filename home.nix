@@ -5,7 +5,7 @@
    imports = [
       # ./modules/shells/caelestia
       ./modules/shells/noctalia
-      ./modules/services/ollama
+      # ./modules/services/ollama
    ];
 
    home.username = "xuerns";
@@ -34,7 +34,14 @@
       gcc
       
       # Python
-      python3
+      python313
+      uv
+      pkg-config
+      SDL2
+      SDL2_image
+      SDL2_mixer
+      SDL2_ttf
+      freetype
 
       # Containers
       docker-compose
@@ -53,10 +60,12 @@
       jetbrains.phpstorm
       android-studio
       wireshark
+      code-cursor
 
       # Agents CLI
       claude-code
       codex
+      opencode
 
       # shell
       fish
@@ -71,8 +80,9 @@
       fast
       cava     
  
-      # Discord
+      # ChatApp
       discord
+      slack
 
       # Note
       obsidian
