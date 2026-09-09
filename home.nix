@@ -3,9 +3,8 @@
 
 {
    imports = [
-      # ./modules/shells/caelestia
       ./modules/shells/noctalia
-      # ./modules/services/ollama
+      ./modules/services/ollama
    ];
 
    home.username = "xuerns";
@@ -35,12 +34,10 @@
       
       # Python
       python313
+
+      # Delele if i done, the project
       uv
       pkg-config
-      SDL2
-      SDL2_image
-      SDL2_mixer
-      SDL2_ttf
       freetype
 
       # Containers
@@ -56,6 +53,7 @@
       # Editor
       vscodium
       antigravity-ide
+      antigravity-cli
       neovim
       jetbrains.phpstorm
       android-studio
@@ -91,5 +89,8 @@
       insomnia
       mpvpaper
       feh
+
+      # Preview
+      vlc
    ];
 }

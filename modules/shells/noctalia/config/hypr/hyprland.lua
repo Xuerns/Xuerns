@@ -51,11 +51,19 @@ local function apply_theme()
 end
 
 hl.monitor({
-    output = "",
+    output = "eDP-1",
     mode   = "preferred",
-    position = "auto",
+    position = "2560x150",
     scale = 1,
 })
+
+hl.monitor({
+    output = "HDMI-A-1",
+    mode = "2560x1440@144",
+    position = "0x0",
+    scale = 1,
+})
+
 
 require("hyprland.keybinds")
 require("hyprland.execs")

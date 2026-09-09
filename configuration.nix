@@ -59,6 +59,9 @@
     xwayland.enable = true;
   };
 
+  # Enable Flatpak system integration and persistence.
+  services.flatpak.enable = true;
+
   # Fish
   programs.fish.enable = true;
 
@@ -151,11 +154,19 @@
       curl
       btop
       waybar
-      pkgs.kitty
+      kitty
       papirus-icon-theme
       gnome-keyring
-      caelestia-shell.packages.${pkgs.system}.with-cli
   ];
+
+  programs.nix-ld.enable = true;
+      programs.nix-ld.libraries = with pkgs; [
+      stdenv.cc.cc
+      zlib
+      openssl
+      glibc
+  ];
+  
 
   # Docker
   virtualisation.docker = {
