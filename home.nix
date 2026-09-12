@@ -4,7 +4,6 @@
 {
    imports = [
       ./modules/shells/noctalia
-      ./modules/services/ollama
    ];
 
    home.username = "xuerns";
@@ -33,12 +32,7 @@
       gcc
       
       # Python
-      python313
-
-      # Delele if i done, the project
-      uv
-      pkg-config
-      freetype
+      python3
 
       # Containers
       docker-compose
@@ -53,15 +47,12 @@
       # Editor
       vscodium
       antigravity-ide
-      antigravity-cli
-      neovim
-      jetbrains.phpstorm
       android-studio
-      wireshark
-      code-cursor
+
+      # Data
+      dbeaver-bin
 
       # Agents CLI
-      claude-code
       codex
       opencode
 
@@ -80,15 +71,6 @@
  
       # ChatApp
       discord
-      slack
-
-      # Note
-      obsidian
-
-      # Tools
-      insomnia
-      mpvpaper
-      feh
 
       # Preview
       vlc
