@@ -24,13 +24,16 @@
       gh
       
       # Golang
-      go
+      go_1_27
       gopls
       air
       delve
       golangci-lint
       gcc
-      
+
+      # DevOps
+      graphviz       
+
       # Python
       python3
 
@@ -71,8 +74,15 @@
  
       # ChatApp
       discord
-
+      slack   
+   
       # Preview
       vlc
+
+      # Image Editor
+      gimp
+
+      # Tools
+      appimage-run
    ];
 }
