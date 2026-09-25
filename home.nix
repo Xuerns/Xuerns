@@ -84,5 +84,6 @@
 
       # Tools
       appimage-run
+      libreoffice
    ];
 }

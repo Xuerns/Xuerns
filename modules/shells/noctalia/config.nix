@@ -6,9 +6,16 @@
    };
 
    programs.noctalia.settings = {
-      theme.templates.user.fastfetch = {
-        input_path = "${./config/fastfetch.jsonc}";
-        output_path = "$XDG_CONFIG_HOME/fastfetch/config.jsonc";
-    };
-  };
+      theme.templates.user = {
+         fastfetch = {
+            input_path = "${./config/fastfetch.jsonc}";
+            output_path = "$XDG_CONFIG_HOME/fastfetch/config.jsonc";
+         };
+
+         cava = {
+            input_path = "${./config/cava}";
+            output_path = "$XDG_CONFIG_HOME/cava/config";
+         };
+      };
+   };
 }

@@ -19,62 +19,74 @@
     "separator": "  "
   },
   "modules": [
-    "title",
-    "separator",
     {
       "type": "os",
+      "keyWidth": 30,
       "keyColor": "{{ colors.primary.default.hex }}"
     },
     {
       "type": "host",
+      "keyWidth": 30,
       "keyColor": "{{ colors.primary.default.hex }}"
     },
     {
       "type": "kernel",
+      "keyWidth": 30,
       "keyColor": "{{ colors.primary.default.hex }}"
     },
     {
       "type": "uptime",
+      "keyWidth": 30,
       "keyColor": "{{ colors.secondary.default.hex }}"
     },
     {
       "type": "packages",
+      "keyWidth": 30,
       "keyColor": "{{ colors.secondary.default.hex }}"
     },
     {
       "type": "shell",
+      "keyWidth": 30,
       "keyColor": "{{ colors.secondary.default.hex }}"
     },
     {
       "type": "de",
+      "keyWidth": 30,
       "keyColor": "{{ colors.tertiary.default.hex }}"
     },
     {
       "type": "wm",
+      "keyWidth": 30,
       "keyColor": "{{ colors.tertiary.default.hex }}"
     },
     {
       "type": "cpu",
+      "keyWidth": 30,
       "keyColor": "{{ colors.primary.default.hex }}"
     },
     {
       "type": "gpu",
+      "keyWidth": 30,
       "keyColor": "{{ colors.primary.default.hex }}"
     },
     {
       "type": "memory",
+      "keyWidth": 30,
       "keyColor": "{{ colors.secondary.default.hex }}"
     },
     {
       "type": "disk",
+      "keyWidth": 30,
       "keyColor": "{{ colors.secondary.default.hex }}"
     },
     {
       "type": "localip",
+      "keyWidth": 30,
       "keyColor": "{{ colors.tertiary.default.hex }}"
     },
     {
       "type": "battery",
+      "keyWidth": 30,
       "keyColor": "{{ colors.tertiary.default.hex }}"
     }
   ]
