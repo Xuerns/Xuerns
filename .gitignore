@@ -1,0 +1,34 @@
+ # Nix build results
+  result
+  result-*
+
+  # Nix development tools
+  .direnv/
+  devenv.local.nix
+
+  # Secrets and environment files
+  .env
+  .env.*
+  !.env.example
+  secrets/
+  *.secret
+  *.secrets
+  *.age
+  *.key
+  *.pem
+
+  # Editor files
+  .vscode/
+  .idea/
+  *.swp
+  *.swo
+  *~
+
+  # OS-generated files
+  .DS_Store
+  Thumbs.db
+
+  # Local backups
+  *.bak
+  *.backup
+  *.save

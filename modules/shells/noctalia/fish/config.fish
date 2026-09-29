@@ -8,7 +8,10 @@ if status is-interactive
 
     # Go binaries
     set -gx PATH $HOME/go/bin $PATH
-
+  
+    # User local binaries
+    set -gx PATH $HOME/.local/bin $HOME/go/bin $PATH
+    
     # Better ls
     command -v eza &> /dev/null && alias ls='eza --icons --group-directories-first -1'
 

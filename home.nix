@@ -17,6 +17,11 @@
 	XDG_CURRENT_DESKTOP = "Hyprland";
         XDG_SESSION_DESKTOP = "Hyprland";
    };
+
+   home.sessionPath = [
+        "$HOME/go/bin"
+        "$HOME/.local/bin"
+   ];
   
    home.packages = with pkgs; [
       # Github
@@ -32,8 +37,10 @@
       gcc
 
       # DevOps
-      graphviz       
-
+      graphviz
+      minikube
+      awscli2       
+        
       # Python
       python3
 

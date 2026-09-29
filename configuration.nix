@@ -125,7 +125,7 @@
   users.users."xuerns" = {
     isNormalUser = true;
     description = "Xuerns";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
       kdePackages.kate
     #  thunderbird
@@ -163,13 +163,13 @@
   # Docker
   virtualisation.docker = {
      enable = true;
+     rootless.enable = false;
      # Non Root user can acceess docker
-     rootless = {
-        enable = true;
-        setSocketVariable = true;
-     };
+     # rootless = {
+        # enable = false;
+        # setSocketVariable = true;
+     # };
   };
-
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
