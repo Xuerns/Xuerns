@@ -40,6 +40,7 @@
       graphviz
       minikube
       awscli2       
+      google-cloud-sdk
         
       # Python
       python3
@@ -56,15 +57,13 @@
 
       # Editor
       vscodium
-      antigravity-ide
+      antigravity
       android-studio
-
-      # Data
-      dbeaver-bin
 
       # Agents CLI
       codex
       opencode
+      antigravity-cli
 
       # shell
       fish
@@ -90,7 +89,6 @@
       gimp
 
       # Tools
-      appimage-run
       libreoffice
    ];
 }

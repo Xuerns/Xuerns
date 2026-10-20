@@ -28,6 +28,13 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  networking.hosts = {
+     "10.96.173.229" = [
+        "synchat.internal"
+        "synchatapi.internal"
+     ];
+  };
+
   # Set your time zone.
   time.timeZone = "Asia/Jakarta";
 
@@ -81,6 +88,9 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+
+  # Flatpak
+  services.flatpak.enable = true;
 
   # Enable NVIDIA Graphic using Prime
   hardware.graphics.enable = true;
