@@ -14,8 +14,6 @@
       <a href="https://github.com/yalongwastaken/git-koi">
         <img src="./koi/koi.gif" width="180" alt="git-koi activity" />
       </a>
-      <br />
-      <sub><samp>git-koi activity</samp></sub>
     </td>
   </tr>
 </table>
