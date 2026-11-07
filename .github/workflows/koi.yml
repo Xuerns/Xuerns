@@ -4,9 +4,6 @@ on:
   schedule:
     - cron: "0 17 * * *" # Daily at 17:00 UTC (00:00 WIB)
   workflow_dispatch:
-  push:
-    branches: [preview-koi]
-    paths: [".github/workflows/koi.yml"]
 
 jobs:
   koi:

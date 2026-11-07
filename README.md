@@ -1,19 +1,14 @@
-<table>
-  <tr>
-    <td width="72%" valign="middle">
-      <h2>Hi, I'm Dida👋</h2>
-      <p>Student learning by building and figuring things out along the way.</p>
-      <ul>
-        <li>Software developer focused on backend and system-level work</li>
-        <li>Currently learning Go</li>
-        <li>Building projects around backend and infrastructure</li>
-      </ul>
-      <p>Feel free to explore my repositories✌️</p>
-    </td>
-    <td width="28%" align="center" valign="middle">
-      <a href="https://github.com/yalongwastaken/git-koi">
-        <img src="./koi/koi.gif" width="180" alt="git-koi activity" />
-      </a>
-    </td>
-  </tr>
-</table>
+<a href="https://github.com/yalongwastaken/git-koi"><img src="./koi/koi.gif" align="right" width="240" alt="git-koi" /></a>
+<img src="./assets/divider.svg" align="right" height="240" alt="" />
+
+### Hi, I'm Dida 👋
+
+Student learning by building and figuring things out along the way.
+
+- Software developer focused on backend and system-level work
+- Currently learning Go
+- Building projects around backend and infrastructure
+
+Feel free to explore my repositories ✌️
+
+<br clear="right" />
